@@ -1,0 +1,28 @@
+
+
+.donations {
+
+  table {
+    max-width: 60%;
+  }
+  td.incentive {
+    width: 40%;
+  }
+  td.pbar {
+    width: 25%;
+  }
+  .image {
+    width: 25%;
+  }
+  .list_image {
+    width: 90%;
+  }
+
+  .progress {
+    background-color: #fe8f36;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: solid;
+  }
+
+}
