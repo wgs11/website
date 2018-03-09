@@ -41516,3 +41516,103 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 2437ms (Views: 2372.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-08 03:53:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (392.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 561ms (Views: 540.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-09 01:34:33 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1204.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1711ms (Views: 1681.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-09 01:37:38 -0500
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (1.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [13 times] (21.0ms)
+  Rendered collection of heros/_hero.html.erb [13 times] (18.0ms)
+  Rendered heros/index.html.erb within layouts/application (80.1ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 378ms (Views: 348.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-03-09 01:37:42 -0500
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (58.9ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 253ms (Views: 185.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-09 01:37:44 -0500
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [13 times] (19.0ms)
+  Rendered collection of heros/_hero.html.erb [13 times] (18.0ms)
+  Rendered heros/index.html.erb within layouts/application (63.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 183ms (Views: 170.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/donations" for 127.0.0.1 at 2018-03-09 01:37:46 -0500
+Processing by DonationsController#index as HTML
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT "donations".* FROM "donations"[0m
+  Rendering donations/index.html.erb within layouts/application
+  Rendered donations/index.html.erb within layouts/application (30.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 184ms (Views: 151.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-03-09 01:45:20 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yFrYKi81HTFbByqknG3yywJSlIn28bwNH1E2vHmhrjhcl+ZFwQHBfA6iz2wsnLr9UnyXflirYGlazdZuiWDS/w==", "session"=>{"twitch_profile_name"=>"Sheppy", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."twitch_profile_name" = ? LIMIT ?[0m  [["twitch_profile_name", "Sheppy"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/12
+Completed 302 Found in 231ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/12" for 127.0.0.1 at 2018-03-09 01:45:20 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (71.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1623.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1842ms (Views: 1749.2ms | ActiveRecord: 71.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-03-09 01:45:26 -0500
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (16.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 209ms (Views: 188.1ms | ActiveRecord: 1.5ms)
+
+
