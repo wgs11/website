@@ -2,6 +2,25 @@ Donation.delete_all
 User.delete_all
 Game.delete_all
 
+
+Heros = [
+    [49, 91, "Ana", "Ana.png"],
+    [57, 90, "Bastion", "Bastion.png"],
+    [57, 91, "D.Va", "DVA.png"],
+    [39, 75, "Doomfist", "Doomfist.png"]
+]
+
+Games = [
+    ["Super Mario 64", "sm64logo.png"],
+    ["Super Mario Sunshine", "smslogo.png"],
+    ["Super Meat Boy", "smb.png"]
+]
+
+Games.each do |name, image_url|
+  Game.create(name: name, image_url: image_url)
+end
+
+
 Incentives = [
     [0, 301, "Super Mario 602", "smslogo.png"],
     [97.85, 250, "Paper Mario TTYD 100%", "smslogo.png"],

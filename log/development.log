@@ -41616,3 +41616,122 @@ Processing by GamesController#index as HTML
 Completed 200 OK in 209ms (Views: 188.1ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/games" for 127.0.0.1 at 2018-03-09 04:07:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (528.4ms)
+Completed 500 Internal Server Error in 749ms (ActiveRecord: 3.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/helpers/sessions_helper.rb:16:in `current_user'
+app/helpers/sessions_helper.rb:8:in `logged_in?'
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___100437963_59196480'
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (491.2ms)
+Started GET "/games" for 127.0.0.1 at 2018-03-09 04:09:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (362.4ms)
+Completed 500 Internal Server Error in 556ms (ActiveRecord: 3.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/helpers/sessions_helper.rb:16:in `current_user'
+app/helpers/sessions_helper.rb:8:in `logged_in?'
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb__1403809772_72316420'
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (394.8ms)
+Started GET "/games" for 127.0.0.1 at 2018-03-09 04:13:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (427.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 651ms (Views: 622.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-03-09 04:13:07 -0500
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (15.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 150ms (Views: 135.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/games/new" for 127.0.0.1 at 2018-03-09 04:13:10 -0500
+Processing by GamesController#new as HTML
+  Rendering games/new.html.erb within layouts/application
+  Rendered games/_form.html.erb (80.3ms)
+  Rendered games/new.html.erb within layouts/application (92.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 235ms (Views: 222.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/donations" for 127.0.0.1 at 2018-03-09 04:16:53 -0500
+Processing by DonationsController#index as HTML
+  [1m[36mDonation Load (0.0ms)[0m  [1m[34mSELECT "donations".* FROM "donations"[0m
+  Rendering donations/index.html.erb within layouts/application
+  Rendered donations/index.html.erb within layouts/application (35.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 200ms (Views: 178.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/donations/96/edit" for 127.0.0.1 at 2018-03-09 04:16:54 -0500
+Processing by DonationsController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT  "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering donations/edit.html.erb within layouts/application
+  Rendered donations/_form.html.erb (2.5ms)
+  Rendered donations/edit.html.erb within layouts/application (15.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 156ms (Views: 141.8ms | ActiveRecord: 0.5ms)
+
+
