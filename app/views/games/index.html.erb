@@ -17,7 +17,7 @@
             </ul>
           <% end %>
           </td>
-          <% if Rails.env.production? %>
+          <% if Rails.env.development? %>
           <td class="list_actions">
             <%= link_to 'Show', game %> </br>
             <%= link_to 'Edit', edit_game_path(game) %></br>
