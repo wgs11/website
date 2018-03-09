@@ -34,11 +34,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/donations/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -109,16 +119,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_hero.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/heros/_hero.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -210,10 +210,10 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/views/games/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/heros/_hero.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/donations/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/heros/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/game.rb" />
         <option value="$PROJECT_DIR$/app/models/category.rb" />
+        <option value="$PROJECT_DIR$/app/views/donations/index.html.erb" />
       </list>
     </option>
   </component>
@@ -223,7 +223,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="2099" />
     <option name="y" value="-9" />
     <option name="width" value="1936" />
@@ -271,6 +271,13 @@
               <item name="website" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="donations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="website" type="b2602c69:ProjectViewProjectNode" />
@@ -442,7 +449,7 @@
       <workItem from="1520296698235" duration="2845000" />
       <workItem from="1520303242585" duration="6826000" />
       <workItem from="1520582308155" duration="11536000" />
-      <workItem from="1520624810867" duration="523000" />
+      <workItem from="1520624810867" duration="1178000" />
     </task>
     <task id="LOCAL-00001" summary="nothing to declare">
       <created>1520583025893</created>
@@ -483,10 +490,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268742000" />
+    <option name="totallyTimeSpent" value="269397000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-9" width="1936" height="1096" extended-state="6" />
+    <frame x="1912" y="-9" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19895834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -751,6 +758,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -813,13 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/donations/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -899,6 +900,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/donations/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding />
         </state>
       </provider>

@@ -7,7 +7,7 @@
     <% @ratio.each do |donation| %>
       <tr style="border-bottom:solid">
         <td class="image"><%= image_tag(donation.image_url, class: 'list_image') %>
-          <% if Rails.env.development %>
+          <% if Rails.env.development? %>
           <%= link_to('Edit',edit_donation_path(donation)) %></td>
             <% end %>
         <td class="pbar">
