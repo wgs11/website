@@ -41766,3 +41766,18 @@ Processing by CategoriesController#edit as HTML
 Completed 200 OK in 183ms (Views: 168.1ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/games" for 127.0.0.1 at 2018-03-09 05:03:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (463.8ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 697ms (Views: 663.6ms | ActiveRecord: 2.0ms)
+
+
