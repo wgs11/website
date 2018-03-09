@@ -87,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/heros/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+              <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -440,7 +440,7 @@
       <workItem from="1520234321289" duration="2844000" />
       <workItem from="1520296698235" duration="2845000" />
       <workItem from="1520303242585" duration="6826000" />
-      <workItem from="1520582308155" duration="8502000" />
+      <workItem from="1520582308155" duration="8698000" />
     </task>
     <task id="LOCAL-00001" summary="nothing to declare">
       <created>1520583025893</created>
@@ -474,7 +474,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265185000" />
+    <option name="totallyTimeSpent" value="265381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-9" width="1936" height="1096" extended-state="6" />
@@ -889,7 +889,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/heros/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding />
         </state>
       </provider>
