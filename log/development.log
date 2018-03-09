@@ -41870,3 +41870,182 @@ Processing by HerosController#index as HTML
 Completed 200 OK in 229ms (Views: 214.5ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/donations" for 127.0.0.1 at 2018-03-09 15:24:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DonationsController#index as HTML
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT "donations".* FROM "donations"[0m
+  Rendering donations/index.html.erb within layouts/application
+  Rendered donations/index.html.erb within layouts/application (514.9ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 812ms (Views: 763.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-09 15:25:22 -0500
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [13 times] (36.5ms)
+  Rendered collection of heros/_hero.html.erb [13 times] (31.0ms)
+  Rendered heros/index.html.erb within layouts/application (119.1ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 274ms (Views: 245.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-03-09 15:26:42 -0500
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (42.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 218ms (Views: 185.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/games/10/edit" for 127.0.0.1 at 2018-03-09 15:26:47 -0500
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (100.2ms)
+  Rendered games/edit.html.erb within layouts/application (121.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 274ms (Views: 256.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-03-09 15:26:53 -0500
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (22.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 155ms (Views: 141.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-03-09 15:26:57 -0500
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 153ms (Views: 132.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/categories/1/edit" for 127.0.0.1 at 2018-03-09 15:27:23 -0500
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/edit.html.erb within layouts/application
+  Rendered categories/_form.html.erb (10.0ms)
+  Rendered categories/edit.html.erb within layouts/application (34.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 221ms (Views: 199.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/categories/2/edit" for 127.0.0.1 at 2018-03-09 15:28:12 -0500
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering categories/edit.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.5ms)
+  Rendered categories/edit.html.erb within layouts/application (15.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 155ms (Views: 140.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/3/edit" for 127.0.0.1 at 2018-03-09 15:28:50 -0500
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering categories/edit.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.5ms)
+  Rendered categories/edit.html.erb within layouts/application (16.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 173ms (Views: 156.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/donations" for 127.0.0.1 at 2018-03-09 15:34:53 -0500
+Processing by DonationsController#index as HTML
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT "donations".* FROM "donations"[0m
+  Rendering donations/index.html.erb within layouts/application
+  Rendered donations/index.html.erb within layouts/application (35.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 169ms (Views: 154.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/donations/100/edit" for 127.0.0.1 at 2018-03-09 15:36:14 -0500
+Processing by DonationsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mDonation Load (0.0ms)[0m  [1m[34mSELECT  "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 100], ["LIMIT", 1]]
+  Rendering donations/edit.html.erb within layouts/application
+  Rendered donations/_form.html.erb (4.0ms)
+  Rendered donations/edit.html.erb within layouts/application (25.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 184ms (Views: 158.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/donations/84/edit" for 127.0.0.1 at 2018-03-09 15:36:28 -0500
+Processing by DonationsController#edit as HTML
+  Parameters: {"id"=>"84"}
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT  "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 84], ["LIMIT", 1]]
+  Rendering donations/edit.html.erb within layouts/application
+  Rendered donations/_form.html.erb (2.5ms)
+  Rendered donations/edit.html.erb within layouts/application (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 157ms (Views: 144.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/donations/86/edit" for 127.0.0.1 at 2018-03-09 15:36:40 -0500
+Processing by DonationsController#edit as HTML
+  Parameters: {"id"=>"86"}
+  [1m[36mDonation Load (0.0ms)[0m  [1m[34mSELECT  "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 86], ["LIMIT", 1]]
+  Rendering donations/edit.html.erb within layouts/application
+  Rendered donations/_form.html.erb (3.0ms)
+  Rendered donations/edit.html.erb within layouts/application (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 159ms (Views: 146.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/donations/105/edit" for 127.0.0.1 at 2018-03-09 15:36:58 -0500
+Processing by DonationsController#edit as HTML
+  Parameters: {"id"=>"105"}
+  [1m[36mDonation Load (0.0ms)[0m  [1m[34mSELECT  "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 105], ["LIMIT", 1]]
+  Rendering donations/edit.html.erb within layouts/application
+  Rendered donations/_form.html.erb (2.5ms)
+  Rendered donations/edit.html.erb within layouts/application (15.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 156ms (Views: 142.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/donations/89/edit" for 127.0.0.1 at 2018-03-09 15:37:05 -0500
+Processing by DonationsController#edit as HTML
+  Parameters: {"id"=>"89"}
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT  "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 89], ["LIMIT", 1]]
+  Rendering donations/edit.html.erb within layouts/application
+  Rendered donations/_form.html.erb (2.5ms)
+  Rendered donations/edit.html.erb within layouts/application (15.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 150ms (Views: 135.5ms | ActiveRecord: 0.5ms)
+
+
