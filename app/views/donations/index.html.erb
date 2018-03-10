@@ -29,5 +29,6 @@
 </table>
 
 <br>
-
+<% if Rails.env.development? %>
 <%= link_to 'New Donation', new_donation_path %>
+<% end %>

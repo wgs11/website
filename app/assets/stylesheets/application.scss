@@ -24,18 +24,22 @@ body {
     bottom: 5px;
 
   }
+
   #banner {
     position: relative;
     min-height: 55px;
     background: #981321;
     font: small-caps 20px/20px "Times New Roman", serif;
-    color: #282;
+    color: #010301;
 
     img {
       position: absolute;
       top: 0;
       left: 0;
       width: 192px;
+    }
+    a {
+      color: #010301;
     }
   }
 

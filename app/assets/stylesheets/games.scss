@@ -1,4 +1,12 @@
 .games {
+  a {
+    text-decoration:none;
+    color: #010301;
+  }
+  a:hover {
+    color: red;
+    text-decoration: none;
+  }
   table {
     border-collapse: collapse;
 

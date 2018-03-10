@@ -1,6 +1,4 @@
-$(function() {
-    $('a#show_hide').click(function(event){
-        event.preventDefault();
-        $('div#show').toggle();
-    });
-});
+$(".edit-user-link").click(function(){
+    $(".edit-user-form").show();
+    return false;
+}
