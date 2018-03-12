@@ -11,17 +11,22 @@
   </div>
 </div>
 <div>
-  <div style="float:left; width: 30%;">
+  <div style="float:left; width: 33%;">
     <table>
-      <%= render(Array(@heros)[0,(@heros.length) / 2]) %>
+      <%= render(Array(@heros)[0..(@heros.length / 3)]) %>
     </table>
     <% if Rails.env.development? %>
     <%= link_to 'New Hero', new_hero_path %>
       <% end %>
   </div>
-  <div style="float:left; width: 30%;">
+  <div style="float:left; width: 33%;">
     <table>
-      <%= render(Array(@heros)[(@heros.length / 2),@heros.length]) %>
+      <%= render(Array(@heros)[9..17]) %>
+    </table>
+  </div>
+  <div style="float:left; width: 33%;">
+    <table>
+      <%= render(Array(@heros)[18..26]) %>
     </table>
   </div>
 </div>
