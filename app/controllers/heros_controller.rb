@@ -1,5 +1,7 @@
 class HerosController < ApplicationController
   before_action :set_hero, only: [:show, :edit, :update, :destroy]
+  before_action :check_user, except: [:show, :index]
+
   # GET /heros
   # GET /heros.json
   def index
