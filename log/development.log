@@ -46180,3 +46180,1221 @@ Processing by HerosController#index as HTML
 Completed 200 OK in 224ms (Views: 211.3ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/heros" for 127.0.0.1 at 2018-03-12 23:28:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (383.3ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (17.5ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (16.5ms)
+  Rendered heros/index.html.erb within layouts/application (462.2ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 687ms (Views: 662.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-12 23:28:23 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Redirected to http://localhost:3000/heros
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-12 23:28:23 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (18.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (17.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (15.5ms)
+  Rendered heros/index.html.erb within layouts/application (88.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 221ms (Views: 209.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-12 23:28:27 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Redirected to http://localhost:3000/heros
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-12 23:28:27 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (21.5ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (19.5ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (16.0ms)
+  Rendered heros/index.html.erb within layouts/application (94.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 223ms (Views: 211.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-12 23:28:28 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Redirected to http://localhost:3000/heros
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-12 23:28:28 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (18.5ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (18.5ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (18.5ms)
+  Rendered heros/index.html.erb within layouts/application (95.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 228ms (Views: 216.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-12 23:28:29 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Redirected to http://localhost:3000/heros
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-12 23:28:29 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (20.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (19.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (16.5ms)
+  Rendered heros/index.html.erb within layouts/application (93.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 227ms (Views: 213.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-12 23:28:30 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Redirected to http://localhost:3000/heros
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-12 23:28:30 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (19.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (17.5ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (16.5ms)
+  Rendered heros/index.html.erb within layouts/application (89.1ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 221ms (Views: 209.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:24:22 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (51.4ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (47.5ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (46.4ms)
+  Rendered heros/index.html.erb within layouts/application (196.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 504ms (Views: 477.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/heros/2" for 127.0.0.1 at 2018-03-13 00:24:42 -0400
+Processing by HerosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Hero with 'id'=2):
+  
+app/controllers/heros_controller.rb:82:in `set_hero'
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (455.9ms)
+Started GET "/heros/10" for 127.0.0.1 at 2018-03-13 00:24:52 -0400
+Processing by HerosController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Hero with 'id'=10):
+  
+app/controllers/heros_controller.rb:82:in `set_hero'
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (372.0ms)
+Started GET "/hero/20" for 127.0.0.1 at 2018-03-13 00:24:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/hero/20"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [65 times] (51.3ms)
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (564.5ms)
+Started GET "/heros/20" for 127.0.0.1 at 2018-03-13 00:25:01 -0400
+Processing by HerosController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Hero with 'id'=20):
+  
+app/controllers/heros_controller.rb:82:in `set_hero'
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (370.5ms)
+Started GET "/heros/24" for 127.0.0.1 at 2018-03-13 00:25:11 -0400
+Processing by HerosController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Hero with 'id'=24):
+  
+app/controllers/heros_controller.rb:82:in `set_hero'
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (373.1ms)
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:25:16 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (26.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (20.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (18.5ms)
+  Rendered heros/index.html.erb within layouts/application (103.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 247ms (Views: 235.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:25:18 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:25:32 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:25:41 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:25:59 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:26:44 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 168ms (Views: 156.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:26:46 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (22.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (20.5ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (19.0ms)
+  Rendered heros/index.html.erb within layouts/application (105.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 255ms (Views: 240.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:26:48 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:26:54 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  Rendering heros/edit.html.erb within layouts/application
+  Rendered heros/_form.html.erb (7.5ms)
+  Rendered heros/edit.html.erb within layouts/application (28.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 188ms (Views: 168.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/47/edit" for 127.0.0.1 at 2018-03-13 00:27:06 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Hero with 'id'=47):
+  
+app/controllers/heros_controller.rb:82:in `set_hero'
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (374.3ms)
+Started GET "/heros/49/edit" for 127.0.0.1 at 2018-03-13 00:27:11 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros/49/edit" for 127.0.0.1 at 2018-03-13 00:27:11 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  Rendering heros/edit.html.erb within layouts/application
+  Rendered heros/_form.html.erb (2.0ms)
+  Rendered heros/edit.html.erb within layouts/application (14.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 150ms (Views: 136.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/heros/50/edit" for 127.0.0.1 at 2018-03-13 00:27:26 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/50/edit" for 127.0.0.1 at 2018-03-13 00:27:26 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  Rendering heros/edit.html.erb within layouts/application
+  Rendered heros/_form.html.erb (1.5ms)
+  Rendered heros/edit.html.erb within layouts/application (13.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 153ms (Views: 141.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:30:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1155.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1625ms (Views: 1601.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:30:46 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (20.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (20.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (19.0ms)
+  Rendered heros/index.html.erb within layouts/application (102.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 359ms (Views: 342.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:30:50 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:30:59 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:31:08 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:31:11 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (20.5ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (24.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (18.5ms)
+  Rendered heros/index.html.erb within layouts/application (103.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 241ms (Views: 229.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:32:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (442.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 655ms (Views: 634.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:32:19 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (35.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (22.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (20.5ms)
+  Rendered heros/index.html.erb within layouts/application (121.1ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 321ms (Views: 302.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:32:21 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:32:26 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:32:40 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:32:43 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (26.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (23.5ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (19.0ms)
+  Rendered heros/index.html.erb within layouts/application (109.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 263ms (Views: 249.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:34:10 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (437.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 640ms (Views: 618.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:34:14 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (19.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (18.5ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (16.0ms)
+  Rendered heros/index.html.erb within layouts/application (94.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 269ms (Views: 249.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:34:17 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:34:31 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:34:39 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (21.5ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (23.5ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (16.5ms)
+  Rendered heros/index.html.erb within layouts/application (99.1ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 226ms (Views: 214.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:35:26 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (363.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 559ms (Views: 537.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:35:29 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (19.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (17.5ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (17.5ms)
+  Rendered heros/index.html.erb within layouts/application (94.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 269ms (Views: 253.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:35:32 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `tr' for nil:NilClass
+Did you mean?  try):
+  
+app/controllers/application_controller.rb:9:in `check_user'
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (372.4ms)
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:36:39 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (402.8ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (18.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (16.0ms)
+  Rendered heros/index.html.erb within layouts/application (480.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 707ms (Views: 683.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:36:43 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 156ms (Views: 141.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:36:44 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (28.5ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (21.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (18.5ms)
+  Rendered heros/index.html.erb within layouts/application (109.1ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 258ms (Views: 240.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:36:45 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `tr' for nil:NilClass
+Did you mean?  try):
+  
+app/controllers/application_controller.rb:9:in `check_user'
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (388.8ms)
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:37:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (403.8ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (18.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (15.5ms)
+  Rendered heros/index.html.erb within layouts/application (483.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 722ms (Views: 696.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:37:25 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `tr' for nil:NilClass
+Did you mean?  try):
+  
+app/controllers/application_controller.rb:9:in `check_user'
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (372.0ms)
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:38:36 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (419.8ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (20.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (18.5ms)
+  Rendered heros/index.html.erb within layouts/application (505.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 738ms (Views: 714.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:38:41 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:38:46 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:38:54 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:38:56 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (19.5ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (17.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (18.0ms)
+  Rendered heros/index.html.erb within layouts/application (91.1ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 236ms (Views: 223.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:39:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (407.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 615ms (Views: 595.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:39:28 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (21.5ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (19.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (16.5ms)
+  Rendered heros/index.html.erb within layouts/application (100.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 262ms (Views: 244.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:39:32 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:39:37 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  Rendering heros/edit.html.erb within layouts/application
+  Rendered heros/_form.html.erb (4.0ms)
+  Rendered heros/edit.html.erb within layouts/application (18.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 169ms (Views: 155.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:46:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (438.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 658ms (Views: 634.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:46:50 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (20.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (19.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (16.0ms)
+  Rendered heros/index.html.erb within layouts/application (96.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 269ms (Views: 251.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:46:51 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:47:04 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  Rendering heros/edit.html.erb within layouts/application
+  Rendered heros/_form.html.erb (4.5ms)
+  Rendered heros/edit.html.erb within layouts/application (17.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 154ms (Views: 140.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:47:51 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (21.5ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (26.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (18.0ms)
+  Rendered heros/index.html.erb within layouts/application (107.1ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 248ms (Views: 234.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:47:53 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  Rendering heros/edit.html.erb within layouts/application
+  Rendered heros/_form.html.erb (2.0ms)
+  Rendered heros/edit.html.erb within layouts/application (14.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 148ms (Views: 135.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:49:38 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (390.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 582ms (Views: 562.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-03-13 00:49:41 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (45.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 248ms (Views: 214.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/games/8/edit" for 127.0.0.1 at 2018-03-13 00:49:45 -0400
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (2.5ms)
+  Rendered games/edit.html.erb within layouts/application (21.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 191ms (Views: 170.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games/8/edit" for 127.0.0.1 at 2018-03-13 00:49:52 -0400
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (1.5ms)
+  Rendered games/edit.html.erb within layouts/application (13.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 153ms (Views: 138.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-03-13 00:50:10 -0400
+Processing by GamesController#index as HTML
+Started GET "/games/8/edit" for 127.0.0.1 at 2018-03-13 00:50:23 -0400
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (31.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 203ms (Views: 152.0ms | ActiveRecord: 4.0ms)
+
+
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:50:37 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (235.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 408ms (Views: 385.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:51:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (397.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 601ms (Views: 580.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-03-13 00:51:10 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (25.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 179ms (Views: 163.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/games/8/edit" for 127.0.0.1 at 2018-03-13 00:51:12 -0400
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/games/8/edit" for 127.0.0.1 at 2018-03-13 00:51:12 -0400
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (2.0ms)
+  Rendered games/edit.html.erb within layouts/application (13.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 149ms (Views: 135.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:53:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (391.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 603ms (Views: 579.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-03-13 00:53:12 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (27.4ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 192ms (Views: 175.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/games/8/edit" for 127.0.0.1 at 2018-03-13 00:53:13 -0400
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (1.5ms)
+  Rendered games/edit.html.erb within layouts/application (13.9ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 154ms (Views: 137.6ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/games/8" for 127.0.0.1 at 2018-03-13 00:53:30 -0400
+Processing by GamesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cbRMsvD8cvkeEwmqhGyN3YwPGIdI9IIwxlB30qiBgtMN87UHgaGXUK840c/W4raSdnbYOCsYicveqx02qFDK5g==", "game"=>{"name"=>"Super Mario 64", "image_url"=>"sm64logo.png"}, "commit"=>"Update Game", "id"=>"8"}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.5ms)
+
+
+Started PATCH "/games/8" for 127.0.0.1 at 2018-03-13 00:53:30 -0400
+Processing by GamesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cbRMsvD8cvkeEwmqhGyN3YwPGIdI9IIwxlB30qiBgtMN87UHgaGXUK840c/W4raSdnbYOCsYicveqx02qFDK5g==", "game"=>{"name"=>"Super Mario 64", "image_url"=>"sm64logo.png"}, "commit"=>"Update Game", "id"=>"8"}
+  [1m[36mGame Load (0.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/games/8
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/games/8" for 127.0.0.1 at 2018-03-13 00:53:30 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 147ms (Views: 124.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:53:32 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (22.5ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (19.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (17.0ms)
+  Rendered heros/index.html.erb within layouts/application (101.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 247ms (Views: 232.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:53:34 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  Rendering heros/edit.html.erb within layouts/application
+  Rendered heros/_form.html.erb (3.5ms)
+  Rendered heros/edit.html.erb within layouts/application (17.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 158ms (Views: 144.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:54:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (348.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 547ms (Views: 527.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:54:58 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (20.5ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (18.1ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (17.0ms)
+  Rendered heros/index.html.erb within layouts/application (110.1ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 291ms (Views: 274.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:55:00 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  Rendering heros/edit.html.erb within layouts/application
+  Rendered heros/_form.html.erb (4.5ms)
+  Rendered heros/edit.html.erb within layouts/application (17.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 177ms (Views: 160.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:55:09 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 138ms (Views: 125.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:55:16 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (21.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (19.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (17.5ms)
+  Rendered heros/index.html.erb within layouts/application (95.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 235ms (Views: 222.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:55:18 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  Rendering heros/edit.html.erb within layouts/application
+  Rendered heros/_form.html.erb (2.0ms)
+  Rendered heros/edit.html.erb within layouts/application (14.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 145ms (Views: 131.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:56:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (365.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 558ms (Views: 538.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:57:04 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (29.5ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (23.5ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (22.0ms)
+  Rendered heros/index.html.erb within layouts/application (121.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 320ms (Views: 301.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/heros/48/edit" for 127.0.0.1 at 2018-03-13 00:57:06 -0400
+Processing by HerosController#edit as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT  "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 00:57:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (375.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 575ms (Views: 555.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heros" for 127.0.0.1 at 2018-03-13 00:57:44 -0400
+Processing by HerosController#index as HTML
+  Rendering heros/index.html.erb within layouts/application
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  Rendered collection of heros/_hero.html.erb [9 times] (21.0ms)
+  Rendered collection of heros/_hero.html.erb [9 times] (20.0ms)
+  Rendered collection of heros/_hero.html.erb [8 times] (20.5ms)
+  Rendered heros/index.html.erb within layouts/application (105.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 269ms (Views: 251.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-03-13 00:57:48 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario 64"]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Mario Sunshine"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Paper Mario 64"]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."game_id" = ?[0m  [["game_id", "Super Meat Boy"]]
+  Rendered games/index.html.erb within layouts/application (27.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 168ms (Views: 152.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/games/8/edit" for 127.0.0.1 at 2018-03-13 00:57:59 -0400
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+Filter chain halted as :check_user rendered or redirected
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/games/8/edit" for 127.0.0.1 at 2018-03-13 00:58:06 -0400
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (2.0ms)
+  Rendered games/edit.html.erb within layouts/application (14.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 154ms (Views: 139.6ms | ActiveRecord: 0.5ms)
+
+
