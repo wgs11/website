@@ -40983,6 +40983,7 @@ Processing by DonationsController#index as HTML
 Completed 200 OK in 225ms (Views: 192.1ms | ActiveRecord: 1.0ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-03-02 20:30:19 -0500
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by PagesController#home as HTML
@@ -47398,3 +47399,5 @@ Processing by GamesController#edit as HTML
 Completed 200 OK in 154ms (Views: 139.6ms | ActiveRecord: 0.5ms)
 
 
+=======
+>>>>>>> 6eea5c94dcd3075e80929bde240b936dffc59413

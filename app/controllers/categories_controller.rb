@@ -1,6 +1,10 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
+<<<<<<< HEAD
   before_action :check_user
+=======
+
+>>>>>>> 6eea5c94dcd3075e80929bde240b936dffc59413
   # GET /categories
   # GET /categories.json
   def index

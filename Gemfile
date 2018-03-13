@@ -10,9 +10,13 @@ end
 gem 'rails', '~> 5.0.6'
 # Use sqlite3 as the database for Active Record
 gem 'bcrypt', '~> 3.1.11', platforms: [:ruby, :x64_mingw, :mingw]
+<<<<<<< HEAD
 gem 'sqlite3', group: :development
 gem 'pg', '0.18.1', group: :production
 gem 'rails_12factor', group: :production
+=======
+gem 'sqlite3'
+>>>>>>> 6eea5c94dcd3075e80929bde240b936dffc59413
 gem 'rest-client'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'

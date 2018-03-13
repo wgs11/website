@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Donations</h1>
+
+<table>
+  <tbody>
+    <% @ratio.each do |donation| %>
+      <tr style="border-bottom:solid">
+        <td class="image"><%= image_tag(donation.image_url, class: 'list_image') %>
+          <%= link_to('Edit',edit_donation_path(donation)) %></td>
+        <td class="pbar">
+          <h3>Goal: $<%=donation.total%></h3>
+          <dl>
+            <div class="progress">
+              <div class="progress-bar" style="width:<%=calc_ratio(donation)%>%;"><%=calc_ratio(donation)%>%</div>
+            </div>
+          </dl>
+        </td>
+        <td class="incentive"></br><h2><%=donation.incentive %></td>
+        <% if calc_ratio(donation) >= 100 %>
+        <td><%= image_tag("checkmark.png", class: 'checkmark')%></td>
+          <%end%>
+    </tr>
+
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Donation', new_donation_path %>

@@ -7,9 +7,13 @@
     <% @ratio.each do |donation| %>
       <tr style="border-bottom:solid">
         <td class="image"><%= image_tag(donation.image_url, class: 'list_image') %>
+<<<<<<< HEAD
           <% if Rails.env.development? %>
           <%= link_to('Edit',edit_donation_path(donation)) %></td>
             <% end %>
+=======
+          <%= link_to('Edit',edit_donation_path(donation)) %></td>
+>>>>>>> 6eea5c94dcd3075e80929bde240b936dffc59413
         <td class="pbar">
           <h3>Goal: $<%=donation.total%></h3>
           <dl>
@@ -29,6 +33,11 @@
 </table>
 
 <br>
+<<<<<<< HEAD
 <% if Rails.env.development? %>
 <%= link_to 'New Donation', new_donation_path %>
 <% end %>
+=======
+
+<%= link_to 'New Donation', new_donation_path %>
+>>>>>>> 6eea5c94dcd3075e80929bde240b936dffc59413

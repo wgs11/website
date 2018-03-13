@@ -16,7 +16,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+<<<<<<< HEAD
       session[:user_id] = @user.id
+=======
+>>>>>>> 6eea5c94dcd3075e80929bde240b936dffc59413
       flash[:success] = "Welcome to the Flock"
       redirect_to @user
     else

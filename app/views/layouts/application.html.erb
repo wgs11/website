@@ -7,7 +7,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
   <%= stylesheet_link_tag "circle"%>
+=======
+>>>>>>> 6eea5c94dcd3075e80929bde240b936dffc59413
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
@@ -15,7 +18,11 @@
 <body class='<%= controller.controller_name %>'>
 <% if !current_page?(root_path) %>
 <div id="banner">
+<<<<<<< HEAD
   <%= link_to image_tag("Logo1.png"), root_path %>
+=======
+  <%= image_tag 'Logo1.png' %>
+>>>>>>> 6eea5c94dcd3075e80929bde240b936dffc59413
   <% if logged_in? %>
     <div class = "form-inline" style="display: inline-block;">
     <%= link_to 'Profile', current_user %> |

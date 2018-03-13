@@ -20,6 +20,7 @@ module HerosHelper
   end
 
   def ratio(hero)
+<<<<<<< HEAD
     begin
     ratio = Float(hero.unlocks) / Float(hero.total)
     return (ratio * 100).round
@@ -32,14 +33,25 @@ module HerosHelper
     all = 0
     have = 0
     begin
+=======
+    ratio = Float(hero.unlocks) / Float(hero.total)
+    return (ratio * 100).round
+  end
+  def get_ratio(heros)
+    all = 0
+    have = 0
+>>>>>>> 6eea5c94dcd3075e80929bde240b936dffc59413
     heros.each do |hero|
       all = all + hero.total
       have = have + hero.unlocks
     end
     ratio = Float(have) / Float(all)
     return (ratio * 100).round
+<<<<<<< HEAD
     rescue ActionView::TemplateError:: (NaN)
       return 50
       end
+=======
+>>>>>>> 6eea5c94dcd3075e80929bde240b936dffc59413
   end
 end

@@ -3,5 +3,12 @@
   <%= gravatar_for @user %>
   <%= @user.display_name %>
 </h1>
+<<<<<<< HEAD
 <%= link_to "Edit Profile", edit_user_path, :class => "edit-user-link"%>
+=======
+<a href="#" id="show_hide">Edit</a>
+<div id="show" class="hidden">
+  <div>@user.display_name</div>
+</div>
+>>>>>>> 6eea5c94dcd3075e80929bde240b936dffc59413
 <div>  <%= test_function(@user) %> </div>
